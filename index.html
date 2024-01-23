@@ -40,6 +40,8 @@
 <body>
     <header class="container mx-auto font-manrope">
 
+        <!-- nav bar -->
+
         <!-- slider -->
         <div class="carousel w-full mt-14 relative">
             <div id="slide1" class="carousel-item relative w-full">
@@ -73,7 +75,8 @@
             <!-- kala baksho -->
             <div class="absolute bg-[#131318] text-white p-4 w-1/2 rounded-2xl right-8 bottom-8">
                 <h class="text-2xl font-extrabold">Meet all the heroes from the field</h3>
-                <p class="text-base text-[#FFFFFF99] mt-4 font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                    <p class="text-base text-[#FFFFFF99] mt-4 font-medium">Dit amet consectetur. Condimentum dignissim
+                        adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
         </div>
 
@@ -83,66 +86,356 @@
     <main class="container mx-auto">
 
         <!-- professional -->
-        <section class="flex flex-col items-center justify-center mt-24 border-t border-dashed border-[#13131833] border-b">
+        <section
+            class="flex flex-col items-center justify-center mt-24 border-t border-dashed border-[#13131833] border-b">
 
             <div class="lg:w-1/2">
                 <h3 class="text-[#131318] text-4xl text-center font-extrabold mb-6">Professional Hockeys Club</h3>
-                <p class="text-[#13131899] text-center text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                <p class="text-[#13131899] text-center text-base">Dit amet consectetur. Condimentum dignissim adipiscing
+                    aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
             <!-- stats -->
-            <div>
+            <div class="flex">
+
                 <div>
-                    <div class="radial-progress text-[#131318]" style="--value:87;" role="progressbar">87%
+                    <div class="radial-progress text-[#FF4240] rotate-[140deg]" style="--value:87;" role="progressbar">
+                        <span class="-rotate-[140deg] text-[#131318] ">87%</span>
                     </div>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                    <div class="radial-progress text-[#49D293] rotate-[100deg]" style="--value:95;" role="progressbar">
+                        <span class="-rotate-[100deg] text-[#131318] ">95%</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="radial-progress text-[#FFB546] rotate-[120deg]" style="--value:90;" role="progressbar">
+                        <span class="-rotate-[120deg] text-[#131318] ">90%</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="radial-progress text-[#4C8DF1] rotate-[160deg]" style="--value:80;" role="progressbar">
+                        <span class="-rotate-[160deg] text-[#131318] ">80%</span>
+                    </div>
+                </div>
+
+
+
+
+
             </div>
         </section>
 
         <!-- program section -->
-        <section class="flex flex-col items-center justify-center mt-24 border-t border-dashed border-[#13131833] border-b">
+        <section
+            class="flex flex-col items-center justify-center mt-24 border-t border-dashed border-[#13131833] border-b">
 
             <div class="lg:w-1/2">
                 <h3 class="text-[#131318] text-4xl text-center font-extrabold mb-6">Program Sections</h3>
-                <p class="text-[#13131899] text-center text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                <p class="text-[#13131899] text-center text-base">Dit amet consectetur. Condimentum dignissim adipiscing
+                    aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
             <!-- stats -->
-            <div>
-                <div>
-                    <div class="card w-1/2 bg-base-100 shadow-xl image-full">
-                        <figure><img src="Images/2.png"/></figure>
-                        <div class="card-body">
-                          <h2 class="card-title">Junior Program</h2>
-                          <p>Dolor sit amet consectetur. Ut urna diam    quis sagittis. Elit elit 
-                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-                          <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Register Now!</button>
-                          </div>
-                        </div>
+            <div class="grid gap-4 grid-cols-2 flex-1">
+
+                <!-- card1-->
+                <div class="card relative bg-cover bg-center shadow-xl rounded-2xl" style="background-image: url('Images/2.png');">
+                    <div class="absolute inset-0 bg-black opacity-40 rounded-2xl"></div>
+                   
+                    <div class="card-body relative z-10 text-white">
+                        <h2 class="card-title text-2xl mt-24 font-extrabold">Junior Program</h2>
+                        <p class="text-base font-medium mt-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                      <div class="card-actions justify-start mt-5 mb-4">
+                        <button class="btn bg-[#FF4240] border-[#FF4240] text-white text-xl font-bold ">Register Now!</button>
                       </div>
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
+                    </div>
+                  </div>
+                  
+
+                <!-- card2-->
+
+                <div class="card relative bg-cover bg-center shadow-xl rounded-2xl" style="background-image: url('Images/3.png');">
+                    <div class="absolute inset-0 bg-black opacity-40 rounded-2xl"></div>
+                   
+                    <div class="card-body relative z-10 text-white">
+                        <h2 class="card-title text-2xl mt-24 font-extrabold">Teenager Program</h2>
+                        <p class="text-base font-medium mt-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                      <div class="card-actions justify-start mt-5 mb-4">
+                        <button class="btn bg-[#FF4240] border-[#FF4240] text-white text-xl font-bold">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                
+
+                <!-- card3-->
+
+
+                <div class="card relative bg-cover bg-center shadow-xl rounded-2xl col-span-2" style="background-image: url('Images/4.png');">
+                    <div class="absolute inset-0 bg-black opacity-40 rounded-2xl"></div>
+                   
+                    <div class="card-body relative z-10 text-white">
+                        <h2 class="card-title text-2xl mt-44 font-extrabold">Professional Program</h2>
+                        <p class="text-base font-medium w-1/2 mt-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                      <div class="card-actions justify-start mt-5 mb-4">
+                        <button class="btn bg-[#FF4240] border-[#FF4240] text-white text-xl font-bold ">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+                  
             </div>
         </section>
 
 
         <!-- new product section -->
 
-        <section class="flex flex-col items-center justify-center mt-24 border-t border-dashed border-[#13131833] border-b">
+        <section
+            class="flex flex-col items-center justify-center mt-24 border-t border-dashed border-[#13131833] border-b">
 
-                <div class="lg:w-1/2">
-                    <h3 class="text-[#131318] text-4xl text-center font-extrabold mb-6">Our New Products</h3>
-                    <p class="text-[#13131899] text-center text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            <div class="lg:w-1/2">
+                <h3 class="text-[#131318] text-4xl text-center font-extrabold mb-6">Our New Products</h3>
+                <p class="text-[#13131899] text-center text-base">Dit amet consectetur. Condimentum dignissim adipiscing
+                    aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+
+            <div class="grid grid-cols-2 flex-1 gap-4">
+                <!-- card 1 -->
+                <div class="card card-side bg-base-100 shadow-xl border px-5 py-1 border-[#1313181A]">
+                    <figure><img src="Images/5.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex text-[#13131880] font-medium text-base gap-4">
+                            <div class="flex gap-2">
+                                <img src="Images/Frame.png" alt="">
+                                <p>5.0</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="Images/Frame (1).png" alt="">
+                                <p>20</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="Images/Frame (2).png" alt="">
+                                <p>200</p>
+                            </div>
+
+
+
+                        </div>
+                        <h2 class="card-title text-[#131318] text-xl font-extrabold">World Cup Flags Football</h2>
+                        <p class="text-[#13131899] text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        </p>
+                        <div class="mt-4">
+                            <div class="flex justify-center items-center">
+                                <p class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</p>
+                                <div class="flex gap-1">
+                                    <img src="Images/Frame4.png" alt="">
+                                    <p class="text-base font-medium text-[#13131880]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
 
-                <div>
-                    
+                <!-- card 2 -->
+                <div class="card card-side bg-base-100 shadow-xl border px-5 py-1 border-[#1313181A]">
+                    <figure><img src="Images/6.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex text-[#13131880] font-medium text-base gap-4">
+                            <div class="flex gap-2">
+                                <img src="Images/Frame.png" alt="">
+                                <p>5.0</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="Images/Frame (1).png" alt="">
+                                <p>20</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="Images/Frame (2).png" alt="">
+                                <p>200</p>
+                            </div>
+
+
+
+                        </div>
+                        <h2 class="card-title text-[#131318] text-xl font-extrabold">World Cup Flags Football</h2>
+                        <p class="text-[#13131899] text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        </p>
+                        <div class="mt-4">
+                            <div class="flex justify-center items-center">
+                                <p class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</p>
+                                <div class="flex gap-1">
+                                    <img src="Images/Frame4.png" alt="">
+                                    <p class="text-base font-medium text-[#13131880]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
+
+                <!-- card 3 -->
+                <div class="card card-side bg-base-100 shadow-xl border px-5 py-1 border-[#1313181A]">
+                    <figure><img src="Images/7.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex text-[#13131880] font-medium text-base gap-4">
+                            <div class="flex gap-2">
+                                <img src="Images/Frame.png" alt="">
+                                <p>5.0</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="Images/Frame (1).png" alt="">
+                                <p>20</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="Images/Frame (2).png" alt="">
+                                <p>200</p>
+                            </div>
+
+
+
+                        </div>
+                        <h2 class="card-title text-[#131318] text-xl font-extrabold">World Cup Flags Football</h2>
+                        <p class="text-[#13131899] text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        </p>
+                        <div class="mt-4">
+                            <div class="flex justify-center items-center">
+                                <p class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</p>
+                                <div class="flex gap-1">
+                                    <img src="Images/Frame4.png" alt="">
+                                    <p class="text-base font-medium text-[#13131880]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- card 4 -->
+                <div class="card card-side bg-base-100 shadow-xl border px-5 py-1 border-[#1313181A]">
+                    <figure><img src="Images/8.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex text-[#13131880] font-medium text-base gap-4">
+                            <div class="flex gap-2">
+                                <img src="Images/Frame.png" alt="">
+                                <p>5.0</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="Images/Frame (1).png" alt="">
+                                <p>20</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="Images/Frame (2).png" alt="">
+                                <p>200</p>
+                            </div>
+
+
+
+                        </div>
+                        <h2 class="card-title text-[#131318] text-xl font-extrabold">World Cup Flags Football</h2>
+                        <p class="text-[#13131899] text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        </p>
+                        <div class="mt-4">
+                            <div class="flex justify-center items-center">
+                                <p class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</p>
+                                <div class="flex gap-1">
+                                    <img src="Images/Frame4.png" alt="">
+                                    <p class="text-base font-medium text-[#13131880]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- card 5 -->
+                <div class="card card-side bg-base-100 shadow-xl border px-5 py-1 border-[#1313181A]">
+                    <figure><img src="Images/9.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex text-[#13131880] font-medium text-base gap-4">
+                            <div class="flex gap-2">
+                                <img src="Images/Frame.png" alt="">
+                                <p>5.0</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="Images/Frame (1).png" alt="">
+                                <p>20</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="Images/Frame (2).png" alt="">
+                                <p>200</p>
+                            </div>
+
+
+
+                        </div>
+                        <h2 class="card-title text-[#131318] text-xl font-extrabold">World Cup Flags Football</h2>
+                        <p class="text-[#13131899] text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        </p>
+                        <div class="mt-4">
+                            <div class="flex justify-center items-center">
+                                <p class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</p>
+                                <div class="flex gap-1">
+                                    <img src="Images/Frame4.png" alt="">
+                                    <p class="text-base font-medium text-[#13131880]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- card 6 -->
+                <div class="card card-side bg-base-100 shadow-xl border px-5 py-1 border-[#1313181A]">
+                    <figure><img src="Images/10.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex text-[#13131880] font-medium text-base gap-4">
+                            <div class="flex gap-2">
+                                <img src="Images/Frame.png" alt="">
+                                <p>5.0</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="Images/Frame (1).png" alt="">
+                                <p>20</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="Images/Frame (2).png" alt="">
+                                <p>200</p>
+                            </div>
+
+
+
+                        </div>
+                        <h2 class="card-title text-[#131318] text-xl font-extrabold">World Cup Flags Football</h2>
+                        <p class="text-[#13131899] text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        </p>
+                        <div class="mt-4">
+                            <div class="flex justify-center items-center">
+                                <p class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</p>
+                                <div class="flex gap-1">
+                                    <img src="Images/Frame4.png" alt="">
+                                    <p class="text-base font-medium text-[#13131880]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </section>
+
+        
     </main>
 </body>
 
