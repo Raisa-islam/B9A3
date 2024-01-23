@@ -1,11 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey</title>
+
+    <!-- tailwind and daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+    <header class="container mx-auto font-manrope">
+
+        <!-- slider -->
+        <div class="carousel w-full mt-14 relative">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex gap-8 transform -translate-y-1/2 bottom-0 left-3">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white border-0">❮</a>
+                    <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="Images/2.png" class="w-full" />
+                <div class="absolute flex gap-8 transform -translate-y-1/2 bottom-0 left-3">
+                    <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❮</a>
+                    <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="Images/3.png" class="w-full" />
+                <div class="absolute flex gap-8 transform -translate-y-1/2 bottom-0 left-3">
+                    <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❮</a>
+                    <a href="#slide4" class="btn btn-circle bg-black text-white border-0">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="Images/4.png" class="w-full" />
+                <div class="absolute flex gap-8 transform -translate-y-1/2 bottom-0 left-3">
+                    <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❮</a>
+                    <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❯</a>
+                </div>
+            </div>
+            <!-- kala baksho -->
+            <div class="absolute bg-[#131318] text-white p-4 w-1/2 rounded-2xl right-8 bottom-8">
+                <h class="text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                <p class="text-base text-[#FFFFFF99] mt-4 font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main class="container mx-auto">
+
+        <!-- professional -->
+        <section class="flex flex-col items-center justify-center mt-24 border-t border-dashed border-[#13131833] border-b">
+
+            <div class="lg:w-1/2">
+                <h3 class="text-[#131318] text-4xl text-center font-extrabold mb-6">Professional Hockeys Club</h3>
+                <p class="text-[#13131899] text-center text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <!-- stats -->
+            <div>
+                <div>
+                    <div class="radial-progress text-[#131318]" style="--value:87;" role="progressbar">87%
+                    </div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+        <!-- program section -->
+        <section class="flex flex-col items-center justify-center mt-24 border-t border-dashed border-[#13131833] border-b">
+
+            <div class="lg:w-1/2">
+                <h3 class="text-[#131318] text-4xl text-center font-extrabold mb-6">Program Sections</h3>
+                <p class="text-[#13131899] text-center text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <!-- stats -->
+            <div>
+                <div>
+                    <div class="card w-1/2 bg-base-100 shadow-xl image-full">
+                        <figure><img src="Images/2.png"/></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Junior Program</h2>
+                          <p>Dolor sit amet consectetur. Ut urna diam    quis sagittis. Elit elit 
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Register Now!</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+
+        <!-- new product section -->
+
+        <section class="flex flex-col items-center justify-center mt-24 border-t border-dashed border-[#13131833] border-b">
+
+                <div class="lg:w-1/2">
+                    <h3 class="text-[#131318] text-4xl text-center font-extrabold mb-6">Our New Products</h3>
+                    <p class="text-[#13131899] text-center text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+
+                <div>
+                    
+                </div>
+        </section>
+    </main>
 </body>
+
 </html>
