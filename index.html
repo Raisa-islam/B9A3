@@ -41,39 +41,79 @@
     <header class="container mx-auto font-manrope">
 
         <!-- nav bar -->
+        <div class="navbar bg-base-100 py-6">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base text-[#424247] font-normal">
+                        <li><a>Home</a></li>
+                        <li> <a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-4xl font-extrabold text-[#131318]">Hockey<span
+                        class="text-[#ff4240]">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-base text-[#424247] font-normal">
+                    <li><a class="hover:text-[#ff4240]">Home</a></li>
+                    <li> <a class="hover:text-[#ff4240]">About</a></li>
+                    <li><a class="hover:text-[#ff4240]">Pages</a></li>
+                    <li><a class="hover:text-[#ff4240]">Blog</a></li>
+                    <li><a class="hover:text-[#ff4240]">Contact</a></li>
 
+                </ul>
+            </div>
+            <div class="navbar-end gap-3">
+                <img src="Images/Frame copy.png" alt="">
+                <a class="btn bg-[#FF4240] text-white text-xl font-bold">Button</a>
+            </div>
+        </div>
         <!-- slider -->
-        <div class="carousel w-full mt-14 relative">
-            <div id="slide1" class="carousel-item relative w-full">
-                <img src="Images/1.png" class="w-full" />
-                <div class="absolute flex gap-8 transform -translate-y-1/2 bottom-0 left-3">
-                    <a href="#slide4" class="btn btn-circle bg-black text-white border-0">❮</a>
-                    <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❯</a>
+        <div class="relative">
+            <div class="carousel w-full mt-8 relative">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white border-0">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❯</a>
+                    </div>
                 </div>
-            </div>
-            <div id="slide2" class="carousel-item relative w-full">
-                <img src="Images/2.png" class="w-full" />
-                <div class="absolute flex gap-8 transform -translate-y-1/2 bottom-0 left-3">
-                    <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❮</a>
-                    <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❯</a>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❯</a>
+                    </div>
                 </div>
-            </div>
-            <div id="slide3" class="carousel-item relative w-full">
-                <img src="Images/3.png" class="w-full" />
-                <div class="absolute flex gap-8 transform -translate-y-1/2 bottom-0 left-3">
-                    <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❮</a>
-                    <a href="#slide4" class="btn btn-circle bg-black text-white border-0">❯</a>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-black text-white border-0">❯</a>
+                    </div>
                 </div>
-            </div>
-            <div id="slide4" class="carousel-item relative w-full">
-                <img src="Images/4.png" class="w-full" />
-                <div class="absolute flex gap-8 transform -translate-y-1/2 bottom-0 left-3">
-                    <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❮</a>
-                    <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❯</a>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/4.png" class="w-full" />
+                    <div class="absolute flex gap-8 transform -translate-y-1/2 bottom-0 left-3">
+                        <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❯</a>
+                    </div>
                 </div>
+
             </div>
+
             <!-- kala baksho -->
-            <div class="absolute bg-[#131318] text-white p-4 w-1/2 rounded-2xl right-8 bottom-8">
+            <div class="lg:absolute bg-[#131318] text-white p-4 lg:w-1/2 rounded-2xl right-8 bottom-8">
                 <h class="text-2xl font-extrabold">Meet all the heroes from the field</h3>
                     <p class="text-base text-[#FFFFFF99] mt-4 font-medium">Dit amet consectetur. Condimentum dignissim
                         adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
@@ -83,20 +123,20 @@
     </header>
 
 
-    <main class="container mx-auto">
+    <main class="container mx-auto font-manrope">
 
         <!-- professional -->
-        <section
-            class="flex flex-col items-center justify-center mt-20">
+        <section class="flex flex-col items-center justify-center mt-20">
             <div class="flex items-center justify-center border-t border-dashed border-[#13131833] border-b w-full">
                 <div class="py-11 lg:w-1/2">
                     <h3 class="text-[#131318] text-4xl text-center font-extrabold mb-6">Professional Hockeys Club</h3>
-                    <p class="text-[#13131899] text-center text-base">Dit amet consectetur. Condimentum dignissim adipiscing
+                    <p class="text-[#13131899] text-center text-base">Dit amet consectetur. Condimentum dignissim
+                        adipiscing
                         aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
                 </div>
             </div>
 
-           
+
             <!-- stats -->
             <div class="flex flex-col lg:flex-row gap-4 mt-12">
                 <!-- stat 1-->
@@ -154,93 +194,103 @@
         </section>
 
         <!-- program section -->
-        <section
-            class="flex flex-col items-center justify-center mt-20">
+        <section class="flex flex-col items-center justify-center mt-20">
             <div class="flex items-center justify-center border-t border-dashed border-[#13131833] border-b w-full">
                 <div class="py-6 lg:w-1/2">
-                    <h3 class="text-[#131318] text-2xl lg:text-4xl text-center font-extrabold mb-6">Program Sections</h3>
-                    <p class="text-[#13131899] text-center text-sm lg:text-base">Dit amet consectetur. Condimentum dignissim adipiscing
+                    <h3 class="text-[#131318] text-2xl lg:text-4xl text-center font-extrabold mb-6">Program Sections
+                    </h3>
+                    <p class="text-[#13131899] text-center text-sm lg:text-base">Dit amet consectetur. Condimentum
+                        dignissim adipiscing
                         aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
                 </div>
             </div>
-            
+
             <!-- stats -->
             <div class="grid gap-4 grid-cols-1 lg:grid-cols-2 flex-1 mt-12">
 
                 <!-- card1-->
-                <div class="card relative bg-cover bg-center shadow-xl rounded-2xl" style="background-image: url('Images/2.png');">
+                <div class="card relative bg-cover bg-center shadow-xl rounded-2xl"
+                    style="background-image: url('Images/2.png');">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-2xl"></div>
-                   
+
                     <div class="card-body relative z-10 text-white">
                         <h2 class="card-title text-2xl lg:mt-24 font-extrabold">Junior Program</h2>
-                        <p class="text-base font-medium mt-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                        <p class="text-base font-medium mt-4">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                            Elit elit
                             enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
                             congue sed et in.</p>
-                      <div class="card-actions justify-start mt-5 mb-4">
-                        <button class="btn bg-[#FF4240] border-[#FF4240] text-white text-xl font-bold ">Register Now</button>
-                      </div>
+                        <div class="card-actions justify-start mt-5 mb-4">
+                            <button class="btn bg-[#FF4240] border-[#FF4240] text-white text-xl font-bold ">Register
+                                Now</button>
+                        </div>
                     </div>
-                  </div>
-                  
+                </div>
+
 
                 <!-- card2-->
 
-                <div class="card relative bg-cover bg-center shadow-xl rounded-2xl" style="background-image: url('Images/3.png');">
+                <div class="card relative bg-cover bg-center shadow-xl rounded-2xl"
+                    style="background-image: url('Images/3.png');">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-2xl"></div>
-                   
+
                     <div class="card-body relative z-10 text-white">
                         <h2 class="card-title text-2xl lg:mt-24 font-extrabold">Teenager Program</h2>
-                        <p class="text-base font-medium mt-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                        <p class="text-base font-medium mt-4">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                            Elit elit
                             enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
                             congue sed et in.</p>
-                      <div class="card-actions justify-start mt-5 mb-4">
-                        <button class="btn bg-[#FF4240] border-[#FF4240] text-white text-xl font-bold">Register Now</button>
-                      </div>
+                        <div class="card-actions justify-start mt-5 mb-4">
+                            <button class="btn bg-[#FF4240] border-[#FF4240] text-white text-xl font-bold">Register
+                                Now</button>
+                        </div>
                     </div>
-                  </div>
-                  
-                
+                </div>
+
+
 
                 <!-- card3-->
 
 
-                <div class="card relative bg-cover bg-center shadow-xl rounded-2xl lg:col-span-2" style="background-image: url('Images/4.png');">
+                <div class="card relative bg-cover bg-center shadow-xl rounded-2xl lg:col-span-2"
+                    style="background-image: url('Images/4.png');">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-2xl"></div>
-                   
+
                     <div class="card-body relative z-10 text-white">
                         <h2 class="card-title text-2xl lg:mt-44 font-extrabold">Professional Program</h2>
-                        <p class="text-base font-medium lg:w-1/2 mt-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                        <p class="text-base font-medium lg:w-1/2 mt-4">Dolor sit amet consectetur. Ut urna diam quis
+                            sagittis. Elit elit
                             enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
                             congue sed et in.</p>
-                      <div class="card-actions justify-start mt-5 mb-4">
-                        <button class="btn bg-[#FF4240] border-[#FF4240] text-white text-xl font-bold ">Register Now</button>
-                      </div>
+                        <div class="card-actions justify-start mt-5 mb-4">
+                            <button class="btn bg-[#FF4240] border-[#FF4240] text-white text-xl font-bold ">Register
+                                Now</button>
+                        </div>
                     </div>
-                  </div>
-                  
+                </div>
+
             </div>
         </section>
 
 
         <!-- new product section -->
 
-        <section
-            class="flex flex-col items-center justify-center mt-24">
+        <section class="flex flex-col items-center justify-center mt-24">
             <div class="flex items-center justify-center border-t border-dashed border-[#13131833] border-b w-full">
                 <div class="py-11 lg:w-1/2">
                     <h3 class="text-[#131318] text-4xl text-center font-extrabold mb-6">Our New Products</h3>
-                    <p class="text-[#13131899] text-center text-base">Dit amet consectetur. Condimentum dignissim adipiscing
+                    <p class="text-[#13131899] text-center text-base">Dit amet consectetur. Condimentum dignissim
+                        adipiscing
                         aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
                 </div>
             </div>
 
-           
+
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12">
                 <!-- card 1 -->
 
-                <div class="card card-side bg-base-100 border px-5 py-1 border-[#1313181A]">
-                    <figure><img src="Images/5.png" alt="Movie"/></figure>
+                <div class="card lg:card-side bg-base-100 border px-1 lg:px-5 py-2 lg:py-1 border-[#1313181A]">
+                    <figure><img class="w-full px-4 py-3 lg:px-0 lg:py-0" src="Images/5.png" alt="Movie" /></figure>
                     <div class="card-body">
                         <div class="flex text-[#13131880] font-medium text-base gap-4">
                             <div class="flex gap-2">
@@ -263,7 +313,7 @@
                         <p class="text-[#13131899] text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.
                         </p>
                         <div class="mt-4">
-                            <div class="flex justify-center items-center">
+                            <div class="flex flex-col lg:flex-row lg:justify-center lg:items-center">
                                 <p class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</p>
                                 <div class="flex gap-1">
                                     <img src="Images/Frame4.png" alt="">
@@ -274,11 +324,11 @@
                         </div>
 
                     </div>
-                  </div>
-               
+                </div>
+
                 <!-- card 2 -->
-                <div class="card card-side bg-base-100  border px-5 py-1 border-[#1313181A]">
-                    <figure><img src="Images/6.png" alt="Movie" /></figure>
+                <div class="card lg:card-side bg-base-100  border px-1 lg:px-5 py-2 lg:py-1 border-[#1313181A]">
+                    <figure><img class="w-full px-4 py-3 lg:px-0 lg:py-0" src="Images/6.png" alt="Movie" /></figure>
                     <div class="card-body">
                         <div class="flex text-[#13131880] font-medium text-base gap-4">
                             <div class="flex gap-2">
@@ -301,7 +351,7 @@
                         <p class="text-[#13131899] text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.
                         </p>
                         <div class="mt-4">
-                            <div class="flex justify-center items-center">
+                            <div class="flex flex-col lg:flex-row lg:justify-center lg:items-center">
                                 <p class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</p>
                                 <div class="flex gap-1">
                                     <img src="Images/Frame4.png" alt="">
@@ -315,8 +365,8 @@
                 </div>
 
                 <!-- card 3 -->
-                <div class="card card-side bg-base-100 border px-5 py-1 border-[#1313181A]">
-                    <figure><img src="Images/7.png" alt="Movie" /></figure>
+                <div class="card lg:card-side bg-base-100 border px-1 lg:px-5 py-2 lg:py-1 border-[#1313181A]">
+                    <figure><img class="w-full px-4 py-3 lg:px-0 lg:py-0" src="Images/7.png" alt="Movie" /></figure>
                     <div class="card-body">
                         <div class="flex text-[#13131880] font-medium text-base gap-4">
                             <div class="flex gap-2">
@@ -339,7 +389,7 @@
                         <p class="text-[#13131899] text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.
                         </p>
                         <div class="mt-4">
-                            <div class="flex justify-center items-center">
+                            <div class="flex flex-col lg:flex-row justify-center lg:items-center">
                                 <p class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</p>
                                 <div class="flex gap-1">
                                     <img src="Images/Frame4.png" alt="">
@@ -354,8 +404,8 @@
 
 
                 <!-- card 4 -->
-                <div class="card card-side bg-base-100 border px-5 py-1 border-[#1313181A]">
-                    <figure><img src="Images/8.png" alt="Movie" /></figure>
+                <div class="card lg:card-side bg-base-100 border px-1 lg:px-5 py-2 lg:py-1 border-[#1313181A]">
+                    <figure><img class="w-full px-4 py-3 lg:px-0 lg:py-0" src="Images/8.png" alt="Movie" /></figure>
                     <div class="card-body">
                         <div class="flex text-[#13131880] font-medium text-base gap-4">
                             <div class="flex gap-2">
@@ -378,7 +428,7 @@
                         <p class="text-[#13131899] text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.
                         </p>
                         <div class="mt-4">
-                            <div class="flex justify-center items-center">
+                            <div class="flex flex-col lg:flex-row justify-center lg:items-center">
                                 <p class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</p>
                                 <div class="flex gap-1">
                                     <img src="Images/Frame4.png" alt="">
@@ -392,8 +442,8 @@
                 </div>
 
                 <!-- card 5 -->
-                <div class="card card-side bg-base-100 border px-5 py-1 border-[#1313181A]">
-                    <figure><img src="Images/9.png" alt="Movie" /></figure>
+                <div class="card lg:card-side bg-base-100 border px-1 lg:px-5 py-2 lg:py-1 border-[#1313181A]">
+                    <figure><img class="w-full px-4 py-3 lg:px-0 lg:py-0" src="Images/9.png" alt="Movie" /></figure>
                     <div class="card-body">
                         <div class="flex text-[#13131880] font-medium text-base gap-4">
                             <div class="flex gap-2">
@@ -416,7 +466,7 @@
                         <p class="text-[#13131899] text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.
                         </p>
                         <div class="mt-4">
-                            <div class="flex justify-center items-center">
+                            <div class="flex flex-col lg:flex-row justify-center lg:items-center">
                                 <p class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</p>
                                 <div class="flex gap-1">
                                     <img src="Images/Frame4.png" alt="">
@@ -430,8 +480,8 @@
                 </div>
 
                 <!-- card 6 -->
-                <div class="card card-side bg-base-100 border px-5 py-1 border-[#1313181A]">
-                    <figure><img src="Images/10.png" alt="Movie" /></figure>
+                <div class="card lg:card-side bg-base-100 border px-1 lg:px-5 py-2 lg:py-1 border-[#1313181A]">
+                    <figure><img class="w-full px-4 py-3 lg:px-0 lg:py-0" src="Images/10.png" alt="Movie" /></figure>
                     <div class="card-body">
                         <div class="flex text-[#13131880] font-medium text-base gap-4">
                             <div class="flex gap-2">
@@ -454,7 +504,7 @@
                         <p class="text-[#13131899] text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.
                         </p>
                         <div class="mt-4">
-                            <div class="flex justify-center items-center">
+                            <div class="flex flex-col lg:flex-row justify-center lg:items-center">
                                 <p class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</p>
                                 <div class="flex gap-1">
                                     <img src="Images/Frame4.png" alt="">
@@ -469,7 +519,161 @@
             </div>
         </section>
 
-        
+        <!-- clients section-->
+        <section class="flex flex-col items-center justify-center mt-24">
+            <div class="flex items-center justify-center border-t border-dashed border-[#13131833] border-b w-full">
+                <div class="py-6 lg:w-1/2">
+                    <h3 class="text-[#131318] text-2xl lg:text-4xl text-center font-extrabold mb-6">Client Questions
+                    </h3>
+                    <p class="text-[#13131899] text-center text-sm lg:text-base">Dit amet consectetur. Condimentum
+                        dignissim adipiscing
+                        aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+            </div>
+
+            <div class="mt-12 border rounded-2xl border-[#1313181A] w-full">
+
+                <div class="card lg:card-side bg-base-100 p-8">
+                    <figure><img src="Images/11.png" alt="Album" /></figure>
+                    <div class="card-body">
+                        <div class="collapse collapse-plus border-b-[1px] rounded-none">
+                            <input type="radio" name="my-accordion-3" checked="checked" />
+                            <div class="collapse-title text-xl font-bold text-[#131318]">
+                                Our Equipment
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-[#13131899] text-base font-normal">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                            </div>
+                        </div>
+
+                        <div class="collapse collapse-plus border-b-[1px] rounded-none">
+                            <input type="radio" name="my-accordion-3"/>
+                            <div class="collapse-title text-xl font-bold text-[#131318]">
+                                Hockey Training
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-[#13131899] text-base font-normal">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                            </div>
+                        </div>
+
+                        <div class="collapse collapse-plus border-b-[1px] rounded-none">
+                            <input type="radio" name="my-accordion-3"/>
+                            <div class="collapse-title text-xl font-bold text-[#131318]">
+                                Private Lessons
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-[#13131899] text-base font-normal">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                            </div>
+                        </div>
+
+                        <div class="collapse collapse-plus border-b-[1px] rounded-none">
+                            <input type="radio" name="my-accordion-3"/>
+                            <div class="collapse-title text-xl font-bold text-[#131318]">
+                                Ski Touring
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-[#13131899] text-base font-normal">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                            </div>
+                        </div>
+
+                        <div class="collapse collapse-plus border-b-[1px] rounded-none">
+                            <input type="radio" name="my-accordion-3"/>
+                            <div class="collapse-title text-xl font-bold text-[#131318]">
+                                Booking
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-[#13131899] text-base font-normal">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                            </div>
+                        </div>
+
+                        <div class="collapse collapse-plus border-b-[1px] rounded-none">
+                            <input type="radio" name="my-accordion-3"/>
+                            <div class="collapse-title text-xl font-bold text-[#131318]">
+                                Pricings
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-[#13131899] text-base font-normal">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Get in touch section -->
+        <section class="flex flex-col items-center justify-center mt-24">
+            <div class="flex items-center justify-center border-t border-dashed border-[#13131833] border-b w-full">
+                <div class="py-6 lg:w-1/2">
+                    <h3 class="text-[#131318] text-2xl lg:text-4xl text-center font-extrabold mb-6">Get In Touch
+                    </h3>
+                    <p class="text-[#13131899] text-center text-sm lg:text-base">Dit amet consectetur. Condimentum
+                        dignissim adipiscing
+                        aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+            </div>
+
+            <div class="mt-12 w-full">
+                <!-- 1st box with form-->
+                <div class="flex gap-2">
+                    <!-- links-->
+                    <div class="border rounded-2xl border-[#1313181A] p-12 flex flex-col gap-6 w-2/5">
+                        <div class="card bg-[#BCED6D1A] items-start pb-12">
+                            <figure class="px-8 pt-8">
+                              <img src="Images/Group 1171275317.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body items-start text-center">
+                              <h2 class="card-title text-[#13131866] text-base font-normal">Phone Number :</h2>
+                              <p class="text-[#131318] text-lg font-extrabold">(+62) 123-321-543</p>
+                            </div>
+                          </div>
+
+                          <div class="card bg-[#FDDD5F1A] items-start pb-12">
+                            <figure class="px-8 pt-8">
+                              <img src="Images/Group 1171275318.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body items-start text-center">
+                              <h2 class="card-title text-[#13131866] text-base font-normal">Email :</h2>
+                              <p class="text-[#131318] text-lg font-extrabold">(+62) 123-321-543</p>
+                            </div>
+                          </div>
+
+                          <div class="card bg-[#629CF31A] items-start pb-12">
+                            <figure class="px-8 pt-8">
+                              <img src="Images/Group 1171275321.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body items-start text-center">
+                              <h2 class="card-title text-[#13131866] text-base font-normal">Location :</h2>
+                              <p class="text-[#131318] text-lg font-extrabold">(+62) 123-321-543</p>
+                            </div>
+                          </div>
+
+                    </div>
+
+                    <!-- forms -->
+                    <div>
+                        
+                    </div>
+                </div>
+
+                <!-- 2nd box social links-->
+                <div class="bg-[#13131808] rounded-xl flex flex-col items-center justify-center mt-12">
+                    <div class="text-[#131318] text-2xl font- pt-9">Social Media</div>
+
+                    <!-- icons -->
+                    <div class="pt-6 flex flex-row gap-8 p-6 text-2xl">
+                        <div><i class="fa-brands fa-facebook" style="color: #131318;"></i></div>
+
+                        <div><i class="fa-brands fa-twitter" style="color: #131318;"></i></div>
+
+                        <div><i class="fa-brands fa-instagram" style="color: #131318;"></i></div>
+
+                        <div><i class="fa-brands fa-github" style="color: #131318;"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
